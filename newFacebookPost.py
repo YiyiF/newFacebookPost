@@ -22,7 +22,7 @@ emailInput = WebDriverWait(driver, 5).until(lambda driver: driver.find_element_b
 pwdInput = WebDriverWait(driver, 5).until(lambda driver: driver.find_element_by_id('pass'))
 
 emailInput.send_keys('freya.fu@gpower.co')
-pwdInput.send_keys('123456Test', Keys.ENTER)
+pwdInput.send_keys('******', Keys.ENTER)
 addNews = WebDriverWait(driver, 10).until(lambda driver: driver.find_elements_by_css_selector('div[aria-label="创建"]'))
 addNews[0].click()
 
